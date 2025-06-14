@@ -1,6 +1,8 @@
+import "./styles.css";
+
 async function getWeatherData() {
     const img = document.querySelector("img");
-    const response = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/murghab?key=DB7GXJD6FSKZ3UFSG8E4HKK7B", {mode: "cors"})
+    const response = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/la?key=DB7GXJD6FSKZ3UFSG8E4HKK7B", {mode: "cors"})
     const weatherData = await response.json();
     let precipate = weatherData.currentConditions.preciptype;
     console.log(weatherData.currentConditions.temp);
@@ -13,7 +15,8 @@ async function getWeatherData() {
             return response.json();
         })
         .then((response) => {
-            img.src = response.data.images.original.url;
+            // img.src = response.data.images.original.url;
+            console.log(response.data.images.original.url);
         })
 }
 

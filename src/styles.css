@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr 6fr;
+    background-color: #FFECD1;
+    font-family: "WDXL Lubrifont JP N";
+    gap: 25px;
+}
+
+.header {
+    font-size: 64px;
+    color: #001524;
+    text-align: center;
+}
+
+form {
+    font-size: 24px;
+}
+
+#locationInput {
+    padding: 10px;
+    background-color: #FFECD1;
+    border-radius: 15px;
+    font-family: "WDXL Lubrifont JP N";
+    height: 20px;
+    font-size: 20px;
+    width: 125px;
+}
