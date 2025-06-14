@@ -16,12 +16,20 @@
             <input type="text" name="location" id="locationInput" required minlength="1">
         </div>
         <div>
-            <label for="tempUnit">Choose A Unit of Temperature (Default Is Fahrenheit):</label>
+            <label>Choose A Unit of Temperature (Default Is Fahrenheit):</label>
             <button id="fahrenheit" type="button">Fahrenheit</button>
             <button id="celsius" type="button">Celsius</button>
         </div>
         <button id="weatherButton" type="submit">Find Weather</button>
     </form>
-    <img>
+    <div class="displayConditions">
+        <img>
+        <div>
+            <div class="conditions"></div>
+            <div class="temp"></div>
+        </div>
+        
+    </div>
+    
 </body>
 </html>
