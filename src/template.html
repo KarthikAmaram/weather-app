@@ -11,8 +11,16 @@
 <body>
     <div class="header">Weather App!</div>
     <form>
-        <label for="locationInput">Enter A Location You Want The Weather For! (Abrreviate Multi Word Cities: New York City -> NYC):</label>
-        <input type="text" name="location" id="locationInput" required minlength="1">
+        <div>
+            <label for="locationInput">Enter A Location You Want The Weather For! (Abrreviate Multi Word Cities: New York City -> NYC):</label>
+            <input type="text" name="location" id="locationInput" required minlength="1">
+        </div>
+        <div>
+            <label for="tempUnit">Choose A Unit of Temperature (Default Is Fahrenheit):</label>
+            <button id="fahrenheit" type="button">Fahrenheit</button>
+            <button id="celsius" type="button">Celsius</button>
+        </div>
+        <button id="weatherButton" type="submit">Find Weather</button>
     </form>
     <img>
 </body>

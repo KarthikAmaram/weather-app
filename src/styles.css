@@ -4,6 +4,7 @@ body {
     background-color: #FFECD1;
     font-family: "WDXL Lubrifont JP N";
     gap: 25px;
+    color: #001524;
 }
 
 .header {
@@ -13,6 +14,9 @@ body {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     font-size: 24px;
 }
 
@@ -24,4 +28,20 @@ form {
     height: 20px;
     font-size: 20px;
     width: 125px;
+    border: 2px solid #001524;
+}
+
+form button {
+    padding: 10px;
+    background-color: #FF7D00;
+    border-radius: 15px;
+    font-family: "WDXL Lubrifont JP N";
+    font-size: 20px;
+    width: 125px;
+    border: 2px solid #001524;
+}
+
+#weatherButton {
+    background-color: #15616D;
+    color: #FFECD1;
 }
